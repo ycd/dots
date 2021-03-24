@@ -1,4 +1,10 @@
-My dotfiles on several things Arch Linux, .zshrc, polybar config bspwm config, sxhkd conf, vimrc, alacritty etc.
+# dots 
 
 ![](assets/environment.png)
+
+--- 
+
+
+Personal dotfiles on several things Arch Linux, .zsh, polybar, bspwm, sxhkd, vimrc, alacritty etc. 
+
 
