@@ -1,10 +1,10 @@
-f [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-xport ZSH="/home/ycd/.oh-my-zsh"
+export ZSH="/home/ycd/.oh-my-zsh"
 
-SH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 plugins=(git docker docker-compose alias-finder zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
