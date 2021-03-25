@@ -1,10 +1,9 @@
 # dots 
 
-![](assets/environment.png)
 
 --- 
 
 
-Personal dotfiles on several things Arch Linux, .zsh, polybar, bspwm, sxhkd, vimrc, alacritty etc. 
+Personal dotfiles for Arch Linux (pacman), bspwm, sxhkd, vimrc, zsh, polybar, alacritty etc. 
 
 
