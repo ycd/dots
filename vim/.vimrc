@@ -30,6 +30,13 @@ let g:solarized_termtrans=1
 map ; :Files<CR>
 nmap " :NERDTreeToggle<CR>
 
+" Coc commands
+autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
+autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
+autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
+
+autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.vim/gofmt-safe\<esc>:loadview\<esc>`z"
+
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -59,6 +66,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+
+
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -77,4 +86,5 @@ endfunction
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
 

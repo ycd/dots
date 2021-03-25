@@ -25,4 +25,5 @@ curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz|tar x
 # :CocInstall coc-pyright
 # :CocInstall coc-rust-analyzer
 
+cp gofmt-safe ~/.vim/gofmt-safe
 
