@@ -14,6 +14,11 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# toggle polybar
+super + y 
+	polybar-msg cmd toggle 
+
+
 #
 # bspwm hotkeys
 #
