@@ -1,39 +1,35 @@
-set number
+colorscheme material-theme
 
-set nocompatible 
-
+" packadd! dracula
+colorscheme gruvbox
+syntax enable
 syntax on
 
+set number
+set nocompatible 
+set ttyfast
 set ruler
-
+set tabstop=4
 set encoding=utf-8
 set clipboard=unnamedplus
 set mouse=a
-colorscheme material-theme
-set ttyfast
-
-
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 set showmatch
-
-
+set laststatus=2
 set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-map ; :Files<CR>
-
-nmap " :NERDTreeToggle<CR>
-packadd! dracula
-syntax enable
-colorscheme dracula
-
-
 set updatetime=300
 set cmdheight=2
+
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+
+map ; :Files<CR>
+nmap " :NERDTreeToggle<CR>
+
 
 function! s:check_back_space() abort
   let col = col('.') - 1
