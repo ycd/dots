@@ -8,7 +8,7 @@ set ruler
 
 set encoding=utf-8
 set clipboard=unnamedplus
-
+set mouse=a
 colorscheme material-theme
 set ttyfast
 

@@ -11,8 +11,8 @@ $HOME/.config/polybar/launch.sh
 # To find which screen cards to use run xrandr -q | grep "connected" 
 ~/confs/dots/bspwm/dual_monitor.sh
 
-bspc monitor eDP-1 -d 1 2 3 4 5
-bspc monitor DP-1 -d 6 7 8 9 0
+# bspc monitor eDP-1 -d 1 2 3 4 5
+# bspc monitor DP-1 -d 6 7 8 9 0
 
 
 bspc config border_width         2
