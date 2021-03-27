@@ -17,6 +17,9 @@ git clone --depth 1 https://github.com/sheerun/vim-polyglot ~/.vim/pack/plugins/
 # lightline 
 git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
 
+# rust vim
+git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
+
 # Setup coc
 mkdir -p ~/.vim/pack/coc/start
 curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz|tar xzfv ~/.vim/pack/coc/start

@@ -26,6 +26,7 @@ set cmdheight=2
 
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+let g:rustfmt_autosave = 1
 
 map ; :Files<CR>
 nmap " :NERDTreeToggle<CR>

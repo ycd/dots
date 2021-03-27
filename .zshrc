@@ -4,7 +4,7 @@ fi
 
 export ZSH="/home/ycd/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git docker docker-compose alias-finder zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -53,3 +53,6 @@ alias vi="vim"
 alias less="bat"
 alias ps="procs"
 alias hptime="hyperfine"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
