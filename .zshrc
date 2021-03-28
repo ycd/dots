@@ -3,6 +3,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="/home/ycd/.oh-my-zsh"
+export EDITOR=vim
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git docker docker-compose alias-finder zsh-autosuggestions)
