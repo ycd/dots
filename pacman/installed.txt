@@ -81,7 +81,7 @@ dconf 0.40.0-1
 ddcutil 1.0.1-1
 desktop-file-utils 0.26-1
 device-mapper 2.03.11-5
-dialog 1:1.3_20210306-1
+dialog 1:1.3_20210319-1
 diffutils 3.7-3
 discord 0.0.14-1
 discount 2.2.7-1
@@ -132,7 +132,7 @@ gawk 5.1.0-1
 gc 8.0.4-4
 gcc 10.2.0-6
 gcc-libs 10.2.0-6
-gcr 3.38.1-1
+gcr 3.40.0-1
 gdb 10.1-4
 gdb-common 10.1-4
 gdbm 1.19-2
@@ -140,16 +140,16 @@ gdk-pixbuf2 2.42.4-1
 gettext 0.21-1
 ghostscript 9.53.3-3
 giflib 5.2.1-2
-git 2.31.0-1
+git 2.31.1-1
 glib-networking 1:2.68.0-1
-glib2 2.68.0-4
+glib2 2.68.0-5
 glibc 2.33-4
 glibmm 2.66.0-1
 glslang 11.2.0-3
 glu 9.0.1-2
 gmp 6.2.1-1
 gn-m85 0.1792.7d7e8dee-1
-gnome-keyring 1:3.36.0-3
+gnome-keyring 1:40.0-1
 gnu-free-fonts 20120503-8
 gnupg 2.2.27-1
 gnutls 3.7.1-1
@@ -171,9 +171,9 @@ gsm 1.0.19-1
 gst-plugins-base 1.18.4-1
 gst-plugins-base-libs 1.18.4-1
 gstreamer 1.18.4-1
-gtk-update-icon-cache 1:4.0.3-3
+gtk-update-icon-cache 1:4.0.3+61+gcb05be0aa5-1
 gtk2 2.24.33-2
-gtk3 1:3.24.27-4
+gtk3 1:3.24.28-1
 gtkmm3 3.24.4-1
 guile 2.2.6-2
 gzip 1.10-3
@@ -246,7 +246,7 @@ kemoticons 5.80.0-1
 keyutils 1.6.3-1
 kfilemetadata 5.80.0-1
 kgamma5 5.21.3-1
-kglobalaccel 5.80.0-1
+kglobalaccel 5.80.0-2
 kguiaddons 5.80.0-1
 kholidays 1:5.80.0-1
 khotkeys 5.21.3-1
@@ -273,7 +273,7 @@ kparts 5.80.0-1
 kpeople 5.80.0-1
 kpty 5.80.0-1
 kquickcharts 5.80.0-1
-krb5 1.18.3-1
+krb5 1.19.1-1
 krunner 5.80.0-1
 kscreen 5.21.3-1
 kscreenlocker 5.21.3-1
@@ -340,7 +340,7 @@ lib32-libxxf86vm 1.1.4-2
 lib32-llvm-libs 11.1.0-1
 lib32-lm_sensors 1:3.6.0.r41.g31d1f125-1
 lib32-lz4 1.9.3-1
-lib32-mesa 20.3.4-3
+lib32-mesa 21.0.1-1
 lib32-ncurses 6.2-1
 lib32-nspr 4.30-1
 lib32-nss 3.63-1
@@ -350,7 +350,7 @@ lib32-readline 8.1.0-2
 lib32-sqlite 3.34.1-1
 lib32-util-linux 2.36.2-1
 lib32-vulkan-icd-loader 1.2.172-1
-lib32-vulkan-radeon 20.3.4-3
+lib32-vulkan-radeon 21.0.1-1
 lib32-wayland 1.19.0-1
 lib32-xz 5.2.5-2
 lib32-zlib 1.2.11-3
@@ -427,6 +427,7 @@ libksysguard 5.21.3.1-1
 libldac 2.0.2.3-1
 libldap 2.4.57-1
 libluv 1.36.0-1
+libmanette 0.2.6-1
 libmaxminddb 1.5.2-1
 libmbim 1.24.6-1
 libmfx 20.5.1-1
@@ -508,7 +509,7 @@ libvpx 1.10.0-1
 libvterm 0.1.3.git1.65dbda-1
 libwacom 1.9-1
 libwebp 1.2.0-1
-libwpe 1.8.0-1
+libwpe 1.10.0-1
 libx11 1.7.0-4
 libxau 1.0.9-3
 libxaw 1.0.13-3
@@ -545,7 +546,7 @@ libzip 1.7.3-2
 licenses 20200427-1
 linux-api-headers 5.10.13-1
 linux-firmware 20210315.3568f96-1
-linux-headers 5.11.9.arch1-1
+linux-headers 5.11.10.arch1-1
 linux-lts 5.10.26-1
 lld 11.1.0-1
 llvm 11.1.0-1
@@ -565,7 +566,7 @@ man-db 2.9.4-1
 md4c 0.4.7-1
 mdadm 4.1-2
 media-player-info 24-2
-mesa 20.3.4-3
+mesa 21.0.1-1
 meson 0.57.1-1
 milou 5.21.3-1
 minizip 1:1.2.11-4
@@ -622,7 +623,7 @@ pacutils 0.10.0-1
 pahole 1.20-2
 pam 1.5.1-1
 pambase 20200721.1-2
-pango 1:1.48.3-2
+pango 1:1.48.4-1
 pangomm 2.46.0-1
 parted 3.4-2
 patch 2.7.6-8
@@ -662,7 +663,7 @@ perl-uri 5.09-1
 perl-www-robotrules 6.02-8
 phonon-qt5 4.11.1-2
 phonon-qt5-gstreamer 4.10.0-2
-pinentry 1.1.0-5
+pinentry 1.1.1-1
 pipewire 1:0.3.24-1
 pixman 0.40.0-1
 pkcs11-helper 1.27.0-1
@@ -828,7 +829,7 @@ source-highlight 3.1.9-4
 speex 1.2.0-3
 speexdsp 1.2.0-2
 spirv-tools 2020.7-1
-sqlite 3.35.2-2
+sqlite 3.35.3-1
 squashfs-tools 4.4-2
 srt 1.4.2-1
 startup-notification 0.12-7
@@ -845,7 +846,7 @@ taglib 1.12-1
 talloc 2.3.2-1
 tar 1.34-1
 tdb 1.4.3-4
-telegram-desktop 2.6.1-1
+telegram-desktop 2.7.1-1
 terminus-font 4.49.1-1
 tevent 1:0.10.2-3
 texinfo 6.7-3
@@ -853,7 +854,7 @@ thin-provisioning-tools 0.9.0-1
 threadweaver 5.80.0-1
 tmux 3.1_c-1
 traceroute 2.1.0-5
-tracker3 3.0.3-1
+tracker3 3.1.0-1
 trizen 1:1.64-1
 tslib 1.22-1
 ttf-dejavu 2.37+18+g9b5d1b2f-2
@@ -883,10 +884,10 @@ visual-studio-code-bin 1.54.3-3
 vmaf 1.5.3-1
 volume_key 0.3.12-5
 vulkan-icd-loader 1.2.172-1
-vulkan-radeon 20.3.4-3
+vulkan-radeon 21.0.1-1
 wayland 1.19.0-1
 wayland-protocols 1.20-1
-webkit2gtk 2.30.6-1
+webkit2gtk 2.32.0-1
 webrtc-audio-processing 0.3.1-2
 wget 1.21.1-1
 which 2.21-5
@@ -934,7 +935,7 @@ yarn 1.22.10-1
 yasm 1.3.0-4
 yay-git 10.2.0.r8.g2da1e15-1
 zenity 3.32.0+55+gd7bedff-1
-zeromq 4.3.3-2
+zeromq 4.3.4-1
 zimg 3.0.1-2
 zip 3.0-9
 zita-alsa-pcmi 0.3.2-3
