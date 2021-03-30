@@ -27,7 +27,19 @@ set cmdheight=2
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
+let g:rust_clip_command = 'xclip -selection clipboard'
 
+
+
+
+
+
+
+nnoremap ? ?\v
+nnoremap / /\v
+cnoremap %s/ %sm/
 map ; :Files<CR>
 nmap " :NERDTreeToggle<CR>
 
@@ -35,9 +47,13 @@ nmap " :NERDTreeToggle<CR>
 autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
 autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
-
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.vim/gofmt-safe\<esc>:loadview\<esc>`z"
 
+
+if (match($TERM, "-256color") != -1) && (match($TERM, "screen-256color") == -1)
+  " screen does not (yet) support truecolor
+  set termguicolors
+endif
 
 function! s:check_back_space() abort
   let col = col('.') - 1
