@@ -49,6 +49,8 @@ autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.vim/gofmt-safe\<esc>:loadview\<esc>`z"
 
+autocmd FileType sql nmap fmt :CocCommand sql.Format<cr>
+
 
 if (match($TERM, "-256color") != -1) && (match($TERM, "screen-256color") == -1)
   " screen does not (yet) support truecolor

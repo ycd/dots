@@ -11,6 +11,11 @@ plugins=(git docker docker-compose alias-finder zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 
+# cd on steroids
+alias fcd='cd $(fd --type directory | fzf)'
+
+
+
 ## ---- ALIASES ----- ## 
 alias pip=pip3
 alias pypy=pypy3
