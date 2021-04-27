@@ -26,7 +26,7 @@ alias virt="python -m venv env && source env/bin/activate"
 alias avirt="source env/bin/activate"
 alias uvi="uvicorn main:app --reload"
 alias uvi4="uvicorn main:app --workers 4"
-export PIP_REQUIRE_VIRTUALENV=true
+# export PIP_REQUIRE_VIRTUALENV=true
 
 # Git Aliases
 alias gc='git commit'
@@ -64,3 +64,19 @@ alias vim="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ycd/build/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ycd/build/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ycd/build/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ycd/build/google-cloud-sdk/completion.zsh.inc'; fi
+
+alias k=kubectl
+
+
+function hist() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
+
+
