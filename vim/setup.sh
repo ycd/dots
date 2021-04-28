@@ -20,6 +20,8 @@ git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lig
 # rust vim
 git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
 
+git clone https://tpope.io/vim/commentary.git ~/.vim/pack/tpope/start/commentary
+
 # Setup coc
 mkdir -p ~/.vim/pack/coc/start
 curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz|tar xzfv ~/.vim/pack/coc/start
