@@ -1,3 +1,9 @@
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
+
+" Options
 colorscheme gruvbox
 syntax enable
 syntax on

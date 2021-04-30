@@ -1,9 +1,16 @@
-cp ~/.config/polybar/config polybar/config
-cp ~/.config/bspwm/bspwmrc bspwm/bspwmrc
-cp ~/.config/sxhkd/sxhkdrc sxhkd/sxhkdrc
+#!/bin/sh
+
 cp ~/.config/alacritty/alacritty.yml alacritty/alacritty.yml
-cp ~/.config/dunst/dunstrc dunst/dunstrc
 cp ~/.vimrc vim/.vimrc
 cp ~/.zshrc .zshrc
-pacman -Q > pacman/installed.txt
+
+
+mv Brewfile .old_brewfile
+
+if brew bundle dump; then
+	rm -rf .old_brewfile
+else
+	mv .old_brewfile Brewfile
+	echo "Failed to update Brewfile"
+fi
 
