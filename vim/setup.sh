@@ -1,6 +1,4 @@
-#!/usr/bin/sh
-
-
+#!/bin/sh
 
 # vim-rooter
 git clone https://github.com/airblade/vim-rooter.git ~/.vim/pack/plugins/start/vim-rooter

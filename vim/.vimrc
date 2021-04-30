@@ -1,6 +1,3 @@
-colorscheme material-theme
-
-" packadd! dracula
 colorscheme gruvbox
 syntax enable
 syntax on
@@ -31,12 +28,6 @@ let g:rustfmt_emit_files = 1
 let g:rustfmt_fail_silently = 0
 let g:rust_clip_command = 'xclip -selection clipboard'
 
-
-
-
-
-
-
 nnoremap ? ?\v
 nnoremap / /\v
 cnoremap %s/ %sm/
@@ -50,7 +41,6 @@ autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.vim/gofmt-safe\<esc>:loadview\<esc>`z"
 
 autocmd FileType sql nmap fmt :CocCommand sql.Format<cr>
-
 
 if (match($TERM, "-256color") != -1) && (match($TERM, "screen-256color") == -1)
   " screen does not (yet) support truecolor
@@ -84,7 +74,6 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
 
 
 " Use K to show documentation in preview window.
