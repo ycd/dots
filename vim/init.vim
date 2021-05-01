@@ -5,6 +5,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-rooter.git'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
@@ -19,6 +20,7 @@ syntax enable
 syntax on
 
 set number
+set lazyredraw
 set nocompatible 
 set ttyfast
 set ruler
