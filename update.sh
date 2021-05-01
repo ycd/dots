@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cp ~/.config/alacritty/alacritty.yml alacritty/alacritty.yml
-cp ~/.vimrc vim/.vimrc
+cp ~/.config/nvim/init.vim vim/init.vim
 cp ~/.zshrc .zshrc
 
 
