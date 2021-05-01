@@ -1,0 +1,33 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+  name = Yağız can Değirmenci
+  email = yagizcanilbey1903@gmail.com
+
+[core]
+  pager = delta
+  editor = vim
+
+[interactive]
+  diffFilter = delta --color-only width 100
+
+[diff]
+  colorMoved = default
+
+[delta]
+  features = line-numbers decorations
+  whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	file-style = bold yellow ul
+	file-decoration-style = none
+	syntax-theme = Dracula
+	plus-style = syntax "#003800"
+	minus-style = syntax "#3f0001"
+
+[pull]
+	ff = only
+
+[init]
+	defaultBranch = main
