@@ -16,7 +16,14 @@ else
 	echo >&2 "WARNING: can't load shell functions"
 fi
 
+# Load custom aliases
+if [[ -f "$HOME/.zsh_aliases.zsh" ]]; then
+	source "$HOME/.zsh_aliases.zsh"
+else
+	echo >&2 "WARNING: can't load shell aliases"
+fi
 
 
-# FUNCTIONS
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
