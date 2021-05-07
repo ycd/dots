@@ -626,7 +626,8 @@ key_bindings:
 - { key: 30,         mods: Alt,   chars: "~"}   # Alt + Ü
 - { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
 - { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
-- { key: 24,         mods: Alt,   chars: "|"}   # Alt + -
+- { key: 50,         mods: Alt,   chars: "|"}   # Alt + -
+ 
 
 
 
