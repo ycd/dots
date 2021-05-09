@@ -1,8 +1,12 @@
 
 export ZSH="/Users/yagizcandegirmenci/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 
 
+
+export PATH=$PATH:$GOPATH:$GOBIN
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
