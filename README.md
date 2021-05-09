@@ -4,6 +4,4 @@
 --- 
 
 
-Personal dotfiles for Arch Linux (pacman), bspwm, sxhkd, vimrc, zsh, polybar, alacritty etc. 
-
-
+Personal dotfiles for MacOS, vim, alacritty, etc.
