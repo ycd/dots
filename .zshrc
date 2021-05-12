@@ -28,6 +28,15 @@ else
 fi
 
 
+# Load custom plugins 
+
+for plug in $HOME/.zsh_plugins/*.zsh; do
+	[ -e "$plug" ] || continue
+	echo "got file $plug"
+	source $plug
+done
+
+
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
