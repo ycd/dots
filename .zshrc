@@ -29,10 +29,8 @@ fi
 
 
 # Load custom plugins 
-
 for plug in $HOME/.zsh_plugins/*.zsh; do
 	[ -e "$plug" ] || continue
-	echo "got file $plug"
 	source $plug
 done
 
