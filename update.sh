@@ -2,6 +2,7 @@
 
 cp ~/.config/alacritty/alacritty.yml alacritty.yml
 cp ~/.config/nvim/init.vim init.vim
+cp ~/.tmux.conf .tmux.conf
 cp ~/.zshrc .zshrc
 cp ~/.zsh_functions.zsh .zsh_functions.zsh
 cp ~/.zsh_aliases.zsh .zsh_aliases.zsh

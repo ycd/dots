@@ -1,12 +1,14 @@
-
+export JAVA_HOME="/Users/yagizcandegirmenci/Library/Caches/Coursier/jvm/adopt@1.8.0-292/Contents/Home"
+export COURSIER="/Users/yagizcandegirmenci/Library/Application Support/Coursier/bin"
 export ZSH="/Users/yagizcandegirmenci/.oh-my-zsh"
+
 export PATH=/opt/homebrew/bin:$PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
+export PATH=$PATH:$GOPATH:$GOBIN:$JAVA_HOME:$COURSIER
 
 
-export PATH=$PATH:$GOPATH:$GOBIN
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
