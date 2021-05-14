@@ -325,13 +325,15 @@ background_opacity: 1
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /bin/zsh
-    #  args:
-    # - -l
-    #- -c
-    #- "tmux attach || tmux"
-# Startup directory
-#
+  program: /opt/homebrew/bin/tmux
+  args:
+      - new-session
+      - -A 
+      - -D
+      - -s 
+      - main
+
+      
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 #working_directory: None
