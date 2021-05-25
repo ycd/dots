@@ -4,13 +4,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
-Plug 'airblade/vim-rooter.git'
+Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'vim/commentary.git'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
