@@ -1,11 +1,7 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="/home/ycd/.oh-my-zsh"
 export EDITOR=vim
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 plugins=(git docker docker-compose alias-finder zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -62,9 +58,6 @@ alias hptime="hyperfine"
 
 alias vim="nvim"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/ycd/build/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ycd/build/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -79,4 +72,28 @@ function hist() {
 }
 
 
+
+
+
+
+# testing setup for macos
+
+function kubectl() {
+    if ! type __start_kubectl >/dev/null 2>&1; then
+        source <(command kubectl completion zsh)
+    fi
+
+    command kubectl "$@"
+}
+
+
+function kp() {
+local pid=$(ps -ef | sed 1d | eval "fzf ${FZF_DEFAULT_OPTS} -m --header='[kill:process]'" | awk '{print $2}')
+
+if [ "x$pid" != "x" ]
+then
+  echo $pid | xargs kill -${1:-9}
+  kp
+fi
+}
 
