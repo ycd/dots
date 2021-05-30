@@ -56,3 +56,5 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 --bind 'ctrl-v:execute(code {+})'
 "
+
+export FZF_DEFAULT_COMMAND="rg --files --hidden"
