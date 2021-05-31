@@ -325,7 +325,7 @@ background_opacity: 1
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /opt/homebrew/bin/tmux
+  program: /usr/local/bin/tmux
   args:
       - new-session
       - -A 
