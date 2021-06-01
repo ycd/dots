@@ -56,7 +56,7 @@ nmap " :NERDTreeToggle<CR>
 autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
 autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
-autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.nvim/gofmt-safe\<esc>:loadview\<esc>`z"
+autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.config/nvim/gofmt-safe\<esc>:loadview\<esc>`z"
 
 autocmd FileType sql nmap fmt :CocCommand sql.Format<cr>
 
