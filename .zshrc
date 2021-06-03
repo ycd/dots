@@ -8,8 +8,8 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 alias java8="export JAVA_HOME=$JAVA_8_HOME"
 export PATH=/opt/homebrew/bin:$PATH
-#export GOPATH=$HOME/go
-#export GOBIN=$GOPATH/bin
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 #:$GOPATH:$GOBIN
 
 export PATH=$PATH:$JAVA_PATH:$JAVA_HOME:$JAVA_11_PATH
@@ -63,3 +63,6 @@ export FZF_DEFAULT_OPTS="
 "
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
+alias def="cd ~/workspace/gjg/protobuf/def"
+alias gen="cd ~/workspace/gjg/protobuf/gen"
+

@@ -609,7 +609,7 @@ key_bindings:
 - { key: F,              mods: Command,            action: ToggleFullscreen }
 - { key: M,              mods: Command,            action: SearchForward    }
 - { key: B,              mods: Command,            action: SearchBackward   }
-- { key: Back,              mods: Control|Alt,            action: SearchBackward   }
+- { key: Back,            mods: Control|Alt,            action: SearchBackward   }
 
 
 # Changes for Turkish Q Keyboard Layout 
@@ -625,7 +625,7 @@ key_bindings:
 - { key: 25,         mods: Alt,   chars: "]"}   # Alt + 9
 - { key: 29,         mods: Alt,   chars: "}"}   # Alt + 0
 - { key: 12,         mods: Alt,   chars: "@"}   # Alt + Q
-- { key: 30,         mods: Alt,   chars: "~"}   # Alt + Ü
+- { key: 24,         mods: Alt,   chars: "~"}   # Alt + Ü
 - { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
 - { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
 - { key: 50,         mods: Alt,   chars: "|"}   # Alt + -

@@ -31,3 +31,9 @@
 
 [init]
 	defaultBranch = main
+
+[url "ssh://git@gitlab.com/"]
+    insteadOf = https://gitlab.com/
+
+[includeIf "gitdir:~/workspace/gjg/"]
+    path = ~/workspace/gjg/.gitconfig
