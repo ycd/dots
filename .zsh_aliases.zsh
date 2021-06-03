@@ -13,3 +13,4 @@ alias k="kubectl"
 alias dcup="docker-compose up"
 alias dcdn="docker-compose down"
 alias dc="docker-compose"
+unalias gsw
