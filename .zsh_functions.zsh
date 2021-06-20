@@ -34,3 +34,7 @@ function gsw() {
   fi 
   git switch $branch
 }
+
+function glt() {
+  git tag | tail -n 1
+}
