@@ -17,7 +17,7 @@ export PATH=$PATH:$JAVA_PATH:$JAVA_HOME:$JAVA_11_PATH
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git z fd zsh-autosuggestions aws sbt alias-finder git-extras gcloud )
 
 source $ZSH/oh-my-zsh.sh
 
