@@ -20,6 +20,7 @@ syntax enable
 syntax on
 
 set number
+set relativenumber
 set lazyredraw
 set nocompatible 
 set ttyfast
@@ -56,7 +57,8 @@ nmap " :NERDTreeToggle<CR>
 autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
 autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
-autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!~/.config/nvim/gofmt-safe\<esc>:loadview\<esc>`z"
+
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 autocmd FileType sql nmap fmt :CocCommand sql.Format<cr>
 
@@ -117,5 +119,6 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " set runtimepath^=~/.vim runtimepath+=~/.vim/after
 " let &packpath = &runtimepath
 " source ~/.vimrc
+
 
 

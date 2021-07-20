@@ -35,6 +35,11 @@ else
 	echo >&2 "WARNING: can't load shell aliases"
 fi
 
+if [[ -f "/Users/yagizcandegirmenci/.zsh_secrets.zsh" ]]; then
+        source "/Users/yagizcandegirmenci/.zsh_secrets.zsh"
+else
+        echo >&2 "WARNING: can't load secret variables"
+fi
 
 # Load custom plugins 
 for plug in $HOME/.zsh_plugins/*.zsh; do

@@ -31,7 +31,7 @@
 	ff = only
 
 [init]
-	defaultBranch = main
+	defaultBranch = master 
 
 [url "ssh://git@gitlab.com/"]
     insteadOf = https://gitlab.com/
