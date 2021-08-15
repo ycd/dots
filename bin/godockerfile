@@ -1,0 +1,23 @@
+#!/bin/sh
+
+VERSION=$1
+
+# check the version if version is not provided use 1.16 else the version
+if [ -z "$VERSION" ]; then
+    VERSION=1.16
+fi
+
+
+DOCKERFILE="FROM golang:$VERSION-alpine
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN go build -o /app .
+
+FROM alpine
+COPY --from=0 /app /app
+ENTRYPOINT ["/app"]
+"
+
+echo "$DOCKERFILE"
