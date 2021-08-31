@@ -1,0 +1,12 @@
+#!/bin/sh
+
+VERSION=$1
+
+if [ -z "$VERSION" ]; then
+    VERSION=1.16.7
+fi
+
+
+
+wget -q -O - https://git.io/vQhTU | bash -s -- --version $VERSION
+

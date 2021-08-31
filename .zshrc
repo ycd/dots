@@ -72,3 +72,8 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias def="cd ~/workspace/gjg/protobuf/def"
 alias gen="cd ~/workspace/gjg/protobuf/gen"
 
+# GoLang
+export GOROOT=/Users/yagizcandegirmenci/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=/Users/yagizcandegirmenci/go
+export PATH=$GOPATH/bin:$PATH
