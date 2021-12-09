@@ -38,3 +38,8 @@ function gsw() {
 function glt() {
   git tag | tail -n 1
 }
+
+function ipv4ToBinary() {
+  ip="$@";
+  for i in $(echo ${ip} | tr '.' ' '); do echo "obase=2 ; $i" | bc; done | awk '{printf ".%08d", $1}' | cut -c2- | tr "." ""
+}

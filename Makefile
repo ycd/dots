@@ -17,5 +17,5 @@ bootstrap:
 	cp init.vim ~/.config/nvim/init.vim 
 	cp gofmt-safe ~/.config/nvim/gofmt-safe 
 	cp -R .zsh_plugins ~/.zsh_plugins
-
+	
 

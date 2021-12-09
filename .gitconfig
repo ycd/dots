@@ -36,5 +36,11 @@
 [url "ssh://git@gitlab.com/"]
     insteadOf = https://gitlab.com/
 
-[includeIf "gitdir:~/workspace/gjg/"]
-    path = ~/workspace/gjg/.gitconfig
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /usr/local/bin/gpg

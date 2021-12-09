@@ -12,8 +12,11 @@ export PATH=/opt/homebrew/bin:$PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 #:$GOPATH:$GOBIN
+export PULUMI_PATH="/Users/yagizcandegirmenci/.pulumi/bin"
+export MONO_PATH="/Library/Frameworks/Mono.framework/Versions/Current/bin"
+export GPG_TTY=$(tty)
 
-export PATH=$PATH:$JAVA_PATH:$JAVA_HOME:$JAVA_11_PATH
+export PATH=$PATH:$JAVA_PATH:$JAVA_HOME:$JAVA_11_PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
 
 ZSH_THEME="robbyrussell"
 
@@ -71,6 +74,13 @@ export FZF_DEFAULT_OPTS="
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias def="cd ~/workspace/gjg/protobuf/def"
 alias gen="cd ~/workspace/gjg/protobuf/gen"
+
+export KUBE_EDTIOR="nvim"
+export EDITOR="nvim"
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
 
 # GoLang
 export GOROOT=/Users/yagizcandegirmenci/.go
