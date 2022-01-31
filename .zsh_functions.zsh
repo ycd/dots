@@ -43,3 +43,7 @@ function ipv4ToBinary() {
   ip="$@";
   for i in $(echo ${ip} | tr '.' ' '); do echo "obase=2 ; $i" | bc; done | awk '{printf ".%08d", $1}' | cut -c2- | tr "." ""
 }
+
+function ytdownload() {
+  youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 $1 
+}

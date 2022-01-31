@@ -22,7 +22,7 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git z fd zsh-autosuggestions aws sbt alias-finder git-extras gcloud )
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh 
 
 # Load custom functions
 if [[ -f "$HOME/.zsh_functions.zsh" ]]; then
