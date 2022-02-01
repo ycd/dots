@@ -2,6 +2,12 @@
 # export COURSIER="/Users/yagizcandegirmenci/Library/Application Support/Coursier/bin"
 # export PATH=$PATH:$GOPATH:$GOBIN:$JAVA_HOME:$COURSIER
 export ZSH="/Users/yagizcandegirmenci/.oh-my-zsh"
+export JAVA_PATH="/usr/local/Cellar/openjdk/16.0.1/bin"
+export JAVA_11_PATH="/usr/local/opt/openjdk@11/bin"
+export JAVA_16_HOME="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home"
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+alias java8="export JAVA_HOME=$JAVA_8_HOME"
+export JAVA_HOME=$JAVA_8_HOME
 export PATH=/opt/homebrew/bin:$PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -10,7 +16,7 @@ export PULUMI_PATH="/Users/yagizcandegirmenci/.pulumi/bin"
 export MONO_PATH="/Library/Frameworks/Mono.framework/Versions/Current/bin"
 export GPG_TTY=$(tty)
 
-export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
+export PATH=$PATH:$JAVA_PATH:$JAVA_HOME:$JAVA_11_PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
 
 ZSH_THEME="robbyrussell"
 
@@ -81,11 +87,3 @@ export GOROOT=/Users/yagizcandegirmenci/.go
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=/Users/yagizcandegirmenci/go
 export PATH=$GOPATH/bin:$PATH
-# GoLang
-export GOROOT=/Users/yagizcandegirmenci/.go
-export PATH=$GOROOT/bin:$PATH
-export GOPATH=/Users/yagizcandegirmenci/go
-export PATH=$GOPATH/bin:$PATH
-
-$HOME/.tmux/plugins/tpm/tpm
-

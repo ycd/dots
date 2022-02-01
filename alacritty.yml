@@ -21,82 +21,82 @@ env:
   TERM: xterm-256color
 
 #window:
-# Window dimensions (changes require restart)
-#
-# Number of lines/columns (not pixels) in the terminal. The number of columns
-# must be at least `2`, while using a value of `0` for columns and lines will
-# fall back to the window manager's recommended size.
-#dimensions:
-#  columns: 0
-#  lines: 0
+  # Window dimensions (changes require restart)
+  #
+  # Number of lines/columns (not pixels) in the terminal. The number of columns
+  # must be at least `2`, while using a value of `0` for columns and lines will
+  # fall back to the window manager's recommended size.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
 
-# Window position (changes require restart)
-#
-# Specified in number of pixels.
-# If the position is not set, the window manager will handle the placement.
-#position:
-#  x: 0
-#  y: 0
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
 
-# Window padding (changes require restart)
-#
-# Blank space added around the window in pixels. This padding is scaled
-# by DPI and the specified value is always added at both opposing sides.
-#padding:
-#  x: 0
-#  y: 0
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  #padding:
+  #  x: 0
+  #  y: 0
 
-# Spread additional padding evenly around the terminal content.
-#dynamic_padding: false
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
 
-# Window decorations
-#
-# Values for `decorations`:
-#     - full: Borders and title bar
-#     - none: Neither borders nor title bar
-#
-# Values for `decorations` (macOS only):
-#     - transparent: Title bar, transparent background and title bar buttons
-#     - buttonless: Title bar, transparent background and no title bar buttons
-#decorations: full
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background and no title bar buttons
+  #decorations: full
 
-# Startup Mode (changes require restart)
-#
-# Values for `startup_mode`:
-#   - Windowed
-#   - Maximized
-#   - Fullscreen
-#
-# Values for `startup_mode` (macOS only):
-#   - SimpleFullscreen
-#startup_mode: Windowed
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  #startup_mode: Windowed
 
-# Window title
-#title: Alacritty
+  # Window title
+  #title: Alacritty
 
-# Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+  # Allow terminal applications to change Alacritty's window title.
+  #dynamic_title: true
 
-# Window class (Linux/BSD only):
-#class:
-# Application instance name
-#instance: Alacritty
-# General application class
-#general: Alacritty
+  # Window class (Linux/BSD only):
+  #class:
+    # Application instance name
+    #instance: Alacritty
+    # General application class
+    #general: Alacritty
 
-# GTK theme variant (Linux/BSD only)
-#
-# Override the variant of the GTK theme. Commonly supported values are `dark`
-# and `light`. Set this to `None` to use the default theme variant.
-#gtk_theme_variant: None
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark`
+  # and `light`. Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
 
 #scrolling:
-# Maximum number of lines in the scrollback buffer.
-# Specifying '0' will disable scrolling.
-#history: 10000
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  #history: 10000
 
-# Scrolling distance multiplier.
-#multiplier: 3
+  # Scrolling distance multiplier.
+  #multiplier: 3
 
 # Font configuration
 font:
@@ -172,36 +172,37 @@ font:
 draw_bold_text_with_bright_colors: true
 
 colors:
+
   primary:
-    background: "#282a36"
-    foreground: "#eff0eb"
+    background: '#282a36'
+    foreground: '#eff0eb'
 
   cursor:
-    cursor: "#97979b"
+    cursor: '#97979b'
 
   selection:
-    text: "#282a36"
-    background: "#feffff"
+    text:       '#282a36'
+    background: '#feffff'
 
   normal:
-    black: "#282a36"
-    red: "#ff5c57"
-    green: "#5af78e"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#f1f1f0"
+    black:   '#282a36'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#f1f1f0'
 
   bright:
-    black: "#686868"
-    red: "#ff5c57"
-    green: "#5af78e"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#eff0eb"
+    black:   '#686868'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#eff0eb'
 
   # Colors (Tomorrow Night)
   # Dim colors
@@ -232,81 +233,81 @@ colors:
 #
 # The bell is rung every time the BEL control character is received.
 #bell:
-# Visual Bell Animation
-#
-# Animation effect for flashing the screen when the visual bell is rung.
-#
-# Values for `animation`:
-#   - Ease
-#   - EaseOut
-#   - EaseOutSine
-#   - EaseOutQuad
-#   - EaseOutCubic
-#   - EaseOutQuart
-#   - EaseOutQuint
-#   - EaseOutExpo
-#   - EaseOutCirc
-#   - Linear
-#animation: EaseOutExpo
+  # Visual Bell Animation
+  #
+  # Animation effect for flashing the screen when the visual bell is rung.
+  #
+  # Values for `animation`:
+  #   - Ease
+  #   - EaseOut
+  #   - EaseOutSine
+  #   - EaseOutQuad
+  #   - EaseOutCubic
+  #   - EaseOutQuart
+  #   - EaseOutQuint
+  #   - EaseOutExpo
+  #   - EaseOutCirc
+  #   - Linear
+  #animation: EaseOutExpo
 
-# Duration of the visual bell flash in milliseconds. A `duration` of `0` will
-# disable the visual bell animation.
-#duration: 0
+  # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
+  # disable the visual bell animation.
+  #duration: 0
 
-# Visual bell animation color.
-#color: '#ffffff'
+  # Visual bell animation color.
+  #color: '#ffffff'
 
-# Bell Command
-#
-# This program is executed whenever the bell is rung.
-#
-# When set to `command: None`, no command will be executed.
-#
-# Example:
-#   command:
-#     program: notify-send
-#     args: ["Hello, World!"]
-#
-#command: None
+  # Bell Command
+  #
+  # This program is executed whenever the bell is rung.
+  #
+  # When set to `command: None`, no command will be executed.
+  #
+  # Example:
+  #   command:
+  #     program: notify-send
+  #     args: ["Hello, World!"]
+  #
+  #command: None
 
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-window_opacity: 1
+background_opacity: 1
 
 #selection:
-# This string contains all characters that are used as separators for
-# "semantic words" in Alacritty.
-#semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
-# When set to `true`, selected text will be copied to the primary clipboard.
-#save_to_clipboard: false
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  #save_to_clipboard: false
 
 #cursor:
-# Cursor style
-#
-# Values for `style`:
-#   - ▇ Block
-#   - _ Underline
-#   - | Beam
-#style: Block
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  #style: Block
 
-# Vi mode cursor style
-#
-# If the vi mode cursor style is `None` or not specified, it will fall back to
-# the style of the active value of the normal cursor.
-#
-# See `cursor.style` for available options.
-#vi_mode_style: None
+  # Vi mode cursor style
+  #
+  # If the vi mode cursor style is `None` or not specified, it will fall back to
+  # the style of the active value of the normal cursor.
+  #
+  # See `cursor.style` for available options.
+  #vi_mode_style: None
 
-# If this is `true`, the cursor will be rendered as a hollow box when the
-# window is not focused.
-#unfocused_hollow: true
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  #unfocused_hollow: true
 
-# Thickness of the cursor relative to the cell width as floating point number
-# from `0.0` to `1.0`.
-#thickness: 0.15
+  # Thickness of the cursor relative to the cell width as floating point number
+  # from `0.0` to `1.0`.
+  #thickness: 0.15
 
 # Live config reload (changes require restart)
 #live_config_reload: true
@@ -322,14 +323,15 @@ window_opacity: 1
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /opt/homebrew/bin/tmux
+  program: /usr/local/bin/tmux
   args:
-    - new-session
-    - -A
-    - -D
-    - -s
-    - main
+      - new-session
+      - -A 
+      - -D
+      - -s 
+      - main
 
+      
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 #working_directory: None
@@ -348,39 +350,39 @@ shell:
 #alt_send_esc: true
 
 #mouse:
-# Click settings
-#
-# The `double_click` and `triple_click` settings control the time
-# alacritty should wait for accepting multiple clicks as one double
-# or triple click.
-#double_click: { threshold: 300 }
-#triple_click: { threshold: 300 }
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
 
-# If this is `true`, the cursor is temporarily hidden when typing.
-#hide_when_typing: false
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  #hide_when_typing: false
 
-#url:
-# URL launcher
-#
-# This program is executed when clicking on a text which is recognized as a
-# URL. The URL is always added to the command as the last parameter.
-#
-# When set to `launcher: None`, URL launching will be disabled completely.
-#
-# Default:
-#   - (macOS) open
-#   - (Linux/BSD) xdg-open
-#   - (Windows) explorer
-#launcher:
-#  program: xdg-open
-#  args: []
+  #url:
+    # URL launcher
+    #
+    # This program is executed when clicking on a text which is recognized as a
+    # URL. The URL is always added to the command as the last parameter.
+    #
+    # When set to `launcher: None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    #launcher:
+    #  program: xdg-open
+    #  args: []
 
-# URL modifiers
-#
-# These are the modifiers that need to be held down for opening URLs when
-# clicking on them. The available modifiers are documented in the key
-# binding section.
-#modifiers: None
+    # URL modifiers
+    #
+    # These are the modifiers that need to be held down for opening URLs when
+    # clicking on them. The available modifiers are documented in the key
+    # binding section.
+    #modifiers: None
 
 # Mouse bindings
 #
@@ -596,53 +598,57 @@ shell:
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
 key_bindings:
-  - { key: Left, mods: Alt, chars: "\x1bb" } # one word left
-  - { key: Right, mods: Alt, chars: "\x1bf" } # one word right
-  - { key: 21, mods: Command, action: IncreaseFontSize } # Command + 4
-  - { key: 24, mods: Command, action: DecreaseFontSize } # Command + -
-  - { key: W, mods: Control, action: Quit }
-  - { key: N, mods: Command, action: SpawnNewInstance }
-  - { key: F, mods: Command, action: ToggleFullscreen }
-  - { key: M, mods: Command, action: SearchForward }
-  - { key: B, mods: Command, action: SearchBackward }
-  - { key: Back, mods: Control|Alt, action: SearchBackward }
+- { key: Left,     mods: Alt,     chars: "\x1bb"}                             # one word left
+- { key: Right,    mods: Alt,     chars: "\x1bf"}                             # one word right
+- { key: 21,         mods: Command,            action: IncreaseFontSize }     # Command + 4
+- { key: 24,          mods: Command,            action: DecreaseFontSize }    # Command + - 
+- { key: W,              mods: Control,            action: Quit             }
+- { key: N,              mods: Command,            action: SpawnNewInstance }
+- { key: F,              mods: Command,            action: ToggleFullscreen }
+- { key: M,              mods: Command,            action: SearchForward    }
+- { key: B,              mods: Command,            action: SearchBackward   }
+- { key: Back,            mods: Control|Alt,            action: SearchBackward   }
 
-  # Changes for Turkish Q Keyboard Layout
-  - { key: 10, mods: Alt, chars: "<" } # Alt + "
-  - { key: 18, mods: Alt, chars: ">" } # Alt + 1
-  - { key: 19, mods: Alt, chars: "£" } # Alt + 2
-  - { key: 20, mods: Alt, chars: "#" } # Alt + 3
-  - { key: 21, mods: Alt, chars: "$" } # Alt + 4
-  - { key: 23, mods: Alt, chars: "½" } # Alt + 5
-  - { key: 22, mods: Alt, chars: "§" } # Alt + 6
-  - { key: 26, mods: Alt, chars: "{" } # Alt + 7
-  - { key: 28, mods: Alt, chars: "[" } # Alt + 8
-  - { key: 25, mods: Alt, chars: "]" } # Alt + 9
-  - { key: 29, mods: Alt, chars: "}" } # Alt + 0
-  - { key: 12, mods: Alt, chars: "@" } # Alt + Q
-  - { key: 24, mods: Alt, chars: "~" } # Alt + Ü
-  - { key: 42, mods: Alt, chars: "`" } # Alt + ,
-  - { key: 27, mods: Alt, chars: "\\" } # Alt + *
-  - { key: 50, mods: Alt, chars: "|" } # Alt + -
+
+# Changes for Turkish Q Keyboard Layout 
+- { key: 10,         mods: Alt,   chars: "<"}   # Alt + " 
+- { key: 18,         mods: Alt,   chars: ">"}   # Alt + 1
+- { key: 19,         mods: Alt,   chars: "£"}   # Alt + 2
+- { key: 20,         mods: Alt,   chars: "#"}   # Alt + 3
+- { key: 21,         mods: Alt,   chars: "$"}   # Alt + 4
+- { key: 23,         mods: Alt,   chars: "½"}   # Alt + 5
+- { key: 22,         mods: Alt,   chars: "§"}   # Alt + 6
+- { key: 26,         mods: Alt,   chars: "{"}   # Alt + 7  
+- { key: 28,         mods: Alt,   chars: "["}   # Alt + 8
+- { key: 25,         mods: Alt,   chars: "]"}   # Alt + 9
+- { key: 29,         mods: Alt,   chars: "}"}   # Alt + 0
+- { key: 12,         mods: Alt,   chars: "@"}   # Alt + Q
+- { key: 24,         mods: Alt,   chars: "~"}   # Alt + Ü
+- { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
+- { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
+- { key: 50,         mods: Alt,   chars: "|"}   # Alt + -
+ 
+
+
 
 #debug:
-# Display the time it takes to redraw each frame.
-#render_timer: false
+  # Display the time it takes to redraw each frame.
+  #render_timer: false
 
-# Keep the log file after quitting Alacritty.
-#persistent_logging: false
+  # Keep the log file after quitting Alacritty.
+  #persistent_logging: false
 
-# Log level
-#
-# Values for `log_level`:
-#   - None
-#   - Error
-#   - Warn
-#   - Info
-#   - Debug
-#   - Trace
-#log_level: Warn
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - None
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  #log_level: Warn
 
-# Print all received window events.
-#print_events: false
+  # Print all received window events.
+  #print_events: false
 
