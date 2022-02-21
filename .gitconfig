@@ -43,4 +43,4 @@
 	gpgsign = true
 
 [gpg]
-	program = /usr/local/bin/gpg
+	program = gpg
