@@ -26,6 +26,7 @@ brew "docker-compose"
 brew "docker-credential-helper-ecr", link: false
 brew "dog"
 brew "earthly"
+brew "elixir"
 brew "exa"
 brew "fd"
 brew "ffmpeg"

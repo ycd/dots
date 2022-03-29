@@ -82,8 +82,10 @@ export EDITOR="nvim"
 export PATH=$PATH:$HOME/.pulumi/bin
 export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
 
-# GoLang
+# 
 export GOROOT=/Users/yagizcandegirmenci/.go
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=/Users/yagizcandegirmenci/go
 export PATH=$GOPATH/bin:$PATH
+export HOMEBREW_NO_AUTO_UPDATE=1
+export CARGO_NET_GIT_FETCH_WITH_CLI=true

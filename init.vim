@@ -120,5 +120,8 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " let &packpath = &runtimepath
 " source ~/.vimrc
 
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
 
 
