@@ -72,8 +72,6 @@ export FZF_DEFAULT_OPTS="
 "
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
-alias def="cd ~/workspace/gjg/protobuf/def"
-alias gen="cd ~/workspace/gjg/protobuf/gen"
 
 export KUBE_EDTIOR="nvim"
 export EDITOR="nvim"
@@ -89,3 +87,8 @@ export GOPATH=/Users/yagizcandegirmenci/go
 export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
+# GoLang
+export GOROOT=/Users/yagizcandegirmenci/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=/Users/yagizcandegirmenci/go
+export PATH=$GOPATH/bin:$PATH

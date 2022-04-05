@@ -15,5 +15,7 @@ alias dcup="docker-compose up"
 alias dcdn="docker-compose down"
 alias dc="docker-compose"
 alias gpo="git push origin"
+alias reload="source ~/.zshrc"
+alias zshrc="nvim ~/.zshrc; reload"
 unalias gsw
 

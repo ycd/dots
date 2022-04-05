@@ -7,13 +7,16 @@ Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'itchyny/lightline.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-commentary'
+Plug 'rhysd/git-messenger.vim'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
+lua require('init')
 
 colorscheme gruvbox
 syntax enable
@@ -115,6 +118,12 @@ endfunction
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+" Switch between panes easily.
+nnoremap gh <C-W><C-H>
+nnoremap gj <C-W><C-J>
+nnoremap gk <C-W><C-K>
+nnoremap gl <C-W><C-L>
+
 " set rtp+=/usr/local/opt/fzf
 " set runtimepath^=~/.vim runtimepath+=~/.vim/after
 " let &packpath = &runtimepath
@@ -123,5 +132,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 let g:lightline = {
       \ 'colorscheme': 'one',
       \ }
+
+
 
 
