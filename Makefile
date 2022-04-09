@@ -4,6 +4,7 @@ update:
 bootstrap:
 	# Create folders
 	mkdir -p ~/.config/alacritty
+	mkdir -p ~/.config/nvim/lua
 	mkdir -p ~/.config/nvim/colors
 	# Copy files
 	cp .gitconfig ~/.gitconfig 
@@ -15,6 +16,7 @@ bootstrap:
 	cp .zshrc ~/.zshrc 
 	cp alacritty.yml ~/.config/alacritty/alacritty.yml
 	cp init.vim ~/.config/nvim/init.vim 
+	cp init.lua ~/.config/nvim/lua/init.lua
 	cp gofmt-safe ~/.config/nvim/gofmt-safe 
 	cp -R .zsh_plugins ~/.zsh_plugins
 	
