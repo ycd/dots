@@ -45,7 +45,7 @@ function ipv4ToBinary() {
 }
 
 function ytdownload() {
-  youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 $1 
+  youtube-dl -f bestaudio -i -c -w --extract-audio --audio-format mp3 --audio-quality 0 $1 
 }
 
 function extract () {
