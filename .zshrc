@@ -9,7 +9,7 @@ export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git z fd zsh-autosuggestions aws sbt alias-finder git-extras gcloud )
+plugins=(git z fd zsh-autosuggestions aws alias-finder git-extras gcloud )
 
 source $ZSH/oh-my-zsh.sh 
 
@@ -43,6 +43,9 @@ for plug in $HOME/.zsh_plugins/*.zsh; do
 	[ -e "$plug" ] || continue
 	source $plug
 done
+
+
+source <(kubectl completion zsh)
 
 
 export FZF_DEFAULT_OPTS="
@@ -79,3 +82,4 @@ export GOPATH=/Users/yagizcandegirmenci/go
 export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
+

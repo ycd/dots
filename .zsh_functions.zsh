@@ -70,4 +70,19 @@ function extract () {
 }
 
 
+function goinstall() {
+  wget -q -O - https://git.io/vQhTU | bash -s -- --version $1
+}
 
+function gmi() {
+  go mod init $1
+  mkdir internal pkg 
+  touch README.md 
+}
+
+function gitblame() {
+  local RANGE=$1
+  local FILE_NAME=$2
+  echo $RANGE $FILE_NAME
+  git blame -L $RANGE -- $FILE_NAME
+}
