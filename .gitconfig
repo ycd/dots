@@ -44,3 +44,5 @@
 
 [gpg]
 	program = gpg
+[push]
+	default = current
