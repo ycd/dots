@@ -9,9 +9,10 @@ export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git z fd zsh-autosuggestions aws alias-finder git-extras gcloud )
+plugins=(git z fd zsh-autosuggestions alias-finder git-extras gcloud aws )
 
 source $ZSH/oh-my-zsh.sh 
+~/.tmux/plugins/tpm/tpm
 
 # Settings
 export HISTFILE=$HOME/.zsh_history
@@ -68,8 +69,8 @@ export FZF_DEFAULT_OPTS="
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
-export KUBE_EDTIOR="nvim"
-export EDITOR="nvim"
+export KUBE_EDTIOR="/Users/yagizcandegirmenci/.local/bin/lvim"
+export EDITOR="/Users/yagizcandegirmenci/.local/bin/lvim"
 
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
@@ -83,3 +84,8 @@ export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
+# GoLang
+export GOROOT=/Users/yagizcandegirmenci/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=/Users/yagizcandegirmenci/go
+export PATH=$GOPATH/bin:$PATH

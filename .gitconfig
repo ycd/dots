@@ -6,11 +6,11 @@
 
 [core]
   pager = delta
-  editor = vim
+  editor = /Users/yagizcandegirmenci/.local/bin/lvim
   excludesfile = /Users/yagizcandegirmenci/.gitignore
 
 [interactive]
-  diffFilter = delta --color-only width 100
+  diffFilter = delta --color-only
 
 [diff]
   colorMoved = default
@@ -18,6 +18,8 @@
 [delta]
   features = line-numbers decorations side-by-side
   whitespace-error-style = 22 reverse
+  side-by-side = true
+
 
 [delta "decorations"]
 	commit-decoration-style = bold yellow box ul
@@ -26,6 +28,7 @@
 	syntax-theme = Dracula
 	plus-style = syntax "#003800"
 	minus-style = syntax "#3f0001"
+    
 
 [pull]
 	ff = only
