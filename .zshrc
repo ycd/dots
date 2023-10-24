@@ -1,18 +1,18 @@
-export ZSH="/Users/yagizcandegirmenci/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export PULUMI_PATH="/Users/yagizcandegirmenci/.pulumi/bin"
 export GPG_TTY=$(tty)
+export LOCAL_BIN="$HOME/.local/bin"
+export LATEX_BIN="/Library/TeX/texbin"
 
-export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH
+export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH:$LOCAL_BIN:$LATEX_BIN
 
 ZSH_THEME="robbyrussell"
 
 plugins=(git z fd zsh-autosuggestions alias-finder git-extras gcloud aws )
 
 source $ZSH/oh-my-zsh.sh 
-~/.tmux/plugins/tpm/tpm
 
 # Settings
 export HISTFILE=$HOME/.zsh_history
@@ -33,8 +33,8 @@ else
 	echo >&2 "WARNING: can't load shell aliases"
 fi
 
-if [[ -f "/Users/yagizcandegirmenci/.zsh_secrets.zsh" ]]; then
-        source "/Users/yagizcandegirmenci/.zsh_secrets.zsh"
+if [[ -f "$HOME/.zsh_secrets.zsh" ]]; then
+        source "$HOME/.zsh_secrets.zsh"
 else
         echo >&2 "WARNING: can't load secret variables"
 fi
@@ -69,23 +69,39 @@ export FZF_DEFAULT_OPTS="
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
-export KUBE_EDTIOR="/Users/yagizcandegirmenci/.local/bin/lvim"
-export EDITOR="/Users/yagizcandegirmenci/.local/bin/lvim"
+export KUBE_EDTIOR="$HOME/.local/bin/nvim"
+export EDITOR="$HOME/.local/bin/nvim"
 
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
 export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
+ 
 
 # 
-export GOROOT=/Users/yagizcandegirmenci/.go
+export GOROOT=$HOME/.go
 export PATH=$GOROOT/bin:$PATH
-export GOPATH=/Users/yagizcandegirmenci/go
+export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
 # GoLang
-export GOROOT=/Users/yagizcandegirmenci/.go
+export GOROOT=$HOME/.go
 export PATH=$GOROOT/bin:$PATH
-export GOPATH=/Users/yagizcandegirmenci/go
+export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
+# GoLang
+export GOROOT=$HOME/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yagu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yagu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yagu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yagu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

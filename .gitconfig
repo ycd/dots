@@ -3,10 +3,11 @@
 # Please adapt and uncomment the following lines:
   name = Yagiz Degirmenci
   email = yagizcanilbey1903@gmail.com
+	signingkey = 085682751B2A98B4
 
 [core]
   pager = delta
-  editor = /Users/yagizcandegirmenci/.local/bin/lvim
+	editor = vim
   excludesfile = /Users/yagizcandegirmenci/.gitignore
 
 [interactive]

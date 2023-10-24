@@ -5,8 +5,10 @@
 # These configuration files will be loaded in order, replacing values in files
 # loaded earlier with those loaded later in the chain. The file itself will
 # always be loaded last.
-#import:
-#  - /path/to/alacritty.yml
+#
+import:
+ - ~/.config/alacritty/themes/themes/iterm.yaml
+
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -109,10 +111,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Hack Nerd Font Mono
+    family: Fira Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    # style: bold
 
   # Bold font face
   bold:
@@ -120,10 +122,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font Mono
+    family: Fira Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    # style: Bold
 
   # Italic font face
   italic:
@@ -131,9 +133,9 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font Mono
+    family: Fira Mono
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    # style: Italic
 
   # Bold italic font face
   bold_italic:
@@ -141,10 +143,10 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font Mono
+    family:  Fira Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic # Point size
+    # style: Bold Italic # Point size
 
   #size: 11.0
 
@@ -172,38 +174,38 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-colors:
+# colors:
 
-  primary:
-    background: '#282a36'
-    foreground: '#eff0eb'
+#   primary:
+#     background: '#282a36'
+#     foreground: '#eff0eb'
 
-  cursor:
-    cursor: '#97979b'
+#   cursor:
+#     cursor: '#97979b'
 
-  selection:
-    text:       '#282a36'
-    background: '#feffff'
+#   selection:
+#     text:       '#282a36'
+#     background: '#feffff'
 
-  normal:
-    black:   '#282a36'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#f1f1f0'
+#   normal:
+#     black:   '#282a36'
+#     red:     '#ff5c57'
+#     green:   '#5af78e'
+#     yellow:  '#f3f99d'
+#     blue:    '#57c7ff'
+#     magenta: '#ff6ac1'
+#     cyan:    '#9aedfe'
+#     white:   '#f1f1f0'
 
-  bright:
-    black:   '#686868'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#eff0eb'
+#   bright:
+#     black:   '#686868'
+#     red:     '#ff5c57'
+#     green:   '#5af78e'
+#     yellow:  '#f3f99d'
+#     blue:    '#57c7ff'
+#     magenta: '#ff6ac1'
+#     cyan:    '#9aedfe'
+#     white:   '#eff0eb'
 
   # Colors (Tomorrow Night)
   # Dim colors
@@ -598,36 +600,33 @@ shell:
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
 key_bindings:
-- { key: Left,     mods: Alt,     chars: "\x1bb"}                             # one word left
-- { key: Right,    mods: Alt,     chars: "\x1bf"}                             # one word right
-- { key: 21,         mods: Command,            action: IncreaseFontSize }     # Command + 4
-- { key: 24,          mods: Command,            action: DecreaseFontSize }    # Command + - 
-- { key: W,              mods: Control,            action: Quit             }
-- { key: N,              mods: Command,            action: SpawnNewInstance }
-- { key: F,              mods: Command,            action: ToggleFullscreen }
-- { key: M,              mods: Command,            action: SearchForward    }
-- { key: B,              mods: Command,            action: SearchBackward   }
-- { key: Back,            mods: Control|Alt,            action: SearchBackward   }
-
-
-# Changes for Turkish Q Keyboard Layout 
-- { key: 10,         mods: Alt,   chars: "<"}   # Alt + " 
-- { key: 18,         mods: Alt,   chars: ">"}   # Alt + 1
-- { key: 19,         mods: Alt,   chars: "£"}   # Alt + 2
-- { key: 20,         mods: Alt,   chars: "#"}   # Alt + 3
-- { key: 21,         mods: Alt,   chars: "$"}   # Alt + 4
-- { key: 23,         mods: Alt,   chars: "½"}   # Alt + 5
-- { key: 22,         mods: Alt,   chars: "§"}   # Alt + 6
-- { key: 26,         mods: Alt,   chars: "{"}   # Alt + 7  
-- { key: 28,         mods: Alt,   chars: "["}   # Alt + 8
-- { key: 25,         mods: Alt,   chars: "]"}   # Alt + 9
-- { key: 29,         mods: Alt,   chars: "}"}   # Alt + 0
-- { key: 12,         mods: Alt,   chars: "@"}   # Alt + Q
-- { key: 24,         mods: Alt,   chars: "~"}   # Alt + Ü
-- { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
-- { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
-- { key: 50,         mods: Alt,   chars: "|"}   # Alt + -
- 
+  - { key: Left,     mods: Alt,     chars: "\x1bb"}                             # one word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"}                             # one word right
+  - { key: 21,         mods: Command,            action: IncreaseFontSize }     # Command + 4
+  - { key: 24,          mods: Command,            action: DecreaseFontSize }    # Command + - 
+  - { key: W,              mods: Control,            action: Quit             }
+  - { key: N,              mods: Command,            action: SpawnNewInstance }
+  - { key: F,              mods: Command,            action: ToggleFullscreen }
+  - { key: M,              mods: Command,            action: SearchForward    }
+  - { key: B,              mods: Command,            action: SearchBackward   }
+  - { key: Back,            mods: Control|Alt,            action: SearchBackward   }
+  - { key: 10,         mods: Alt,   chars: "<"}   # Alt + " 
+  - { key: 18,         mods: Alt,   chars: ">"}   # Alt + 1
+  - { key: 19,         mods: Alt,   chars: "£"}   # Alt + 2
+  - { key: 20,         mods: Alt,   chars: "#"}   # Alt + 3
+  - { key: 21,         mods: Alt,   chars: "$"}   # Alt + 4
+  - { key: 23,         mods: Alt,   chars: "½"}   # Alt + 5
+  - { key: 22,         mods: Alt,   chars: "§"}   # Alt + 6
+  - { key: 26,         mods: Alt,   chars: "{"}   # Alt + 7  
+  - { key: 28,         mods: Alt,   chars: "["}   # Alt + 8
+  - { key: 25,         mods: Alt,   chars: "]"}   # Alt + 9
+  - { key: 29,         mods: Alt,   chars: "}"}   # Alt + 0
+  - { key: 12,         mods: Alt,   chars: "@"}   # Alt + Q
+  - { key: 24,         mods: Alt,   chars: "~"}   # Alt + Ü
+  - { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
+  - { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
+  - { key: 50,         mods: Alt,   chars: "|"}   # Alt + -
+   
 
 
 

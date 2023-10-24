@@ -1,6 +1,3 @@
-alias pip=pip3
-alias pypy=pypy3
-alias python=python3
 alias gc='git commit'
 alias gic="git clone"
 alias ls="exa"
@@ -17,11 +14,10 @@ alias gpo="git push origin"
 alias reload="source ~/.zshrc"
 alias zshrc="lvim ~/.zshrc; reload"
 unalias gsw
-alias lvim="/Users/yagizcandegirmenci/.local/bin/lvim"
 alias vim="lvim"
 
-
 alias asp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
+alias cursor="/Applications/Cursor.app/Contents/MacOS/Cursor"
 
 
 ### Kubectl aliases

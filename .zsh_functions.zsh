@@ -6,6 +6,10 @@ function kubectl() {
   command kubectl "$@"
 }
 
+function exportenv() {
+  export $(cat .env | xargs)
+}
+
 
 function hist() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
@@ -86,3 +90,6 @@ function gitblame() {
   echo $RANGE $FILE_NAME
   git blame -L $RANGE -- $FILE_NAME
 }
+
+
+
