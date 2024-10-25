@@ -610,23 +610,7 @@ key_bindings:
   - { key: M,              mods: Command,            action: SearchForward    }
   - { key: B,              mods: Command,            action: SearchBackward   }
   - { key: Back,            mods: Control|Alt,            action: SearchBackward   }
-  - { key: 10,         mods: Alt,   chars: "<"}   # Alt + " 
-  - { key: 18,         mods: Alt,   chars: ">"}   # Alt + 1
-  - { key: 19,         mods: Alt,   chars: "£"}   # Alt + 2
-  - { key: 20,         mods: Alt,   chars: "#"}   # Alt + 3
-  - { key: 21,         mods: Alt,   chars: "$"}   # Alt + 4
-  - { key: 23,         mods: Alt,   chars: "½"}   # Alt + 5
-  - { key: 22,         mods: Alt,   chars: "§"}   # Alt + 6
-  - { key: 26,         mods: Alt,   chars: "{"}   # Alt + 7  
-  - { key: 28,         mods: Alt,   chars: "["}   # Alt + 8
-  - { key: 25,         mods: Alt,   chars: "]"}   # Alt + 9
-  - { key: 29,         mods: Alt,   chars: "}"}   # Alt + 0
-  - { key: 12,         mods: Alt,   chars: "@"}   # Alt + Q
-  - { key: 24,         mods: Alt,   chars: "~"}   # Alt + Ü
-  - { key: 42,         mods: Alt,   chars: "`"}   # Alt + ,
-  - { key: 27,         mods: Alt,   chars: "\\"}  # Alt + *
-  - { key: 50,         mods: Alt,   chars: "|"}   # Alt + -
-   
+  
 
 
 
@@ -650,4 +634,3 @@ key_bindings:
 
   # Print all received window events.
   #print_events: false
-
