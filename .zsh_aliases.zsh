@@ -1,6 +1,6 @@
 alias gc='git commit'
 alias gic="git clone"
-alias ls="exa"
+alias ls="eza"
 alias vi="vim"
 alias less="bat"
 alias ps="procs"
@@ -17,7 +17,7 @@ unalias gsw
 alias vim="lvim"
 
 alias asp='export AWS_PROFILE=$(sed -n "s/\[profile \(.*\)\]/\1/gp" ~/.aws/config | fzf)'
-alias cursor="/Applications/Cursor.app/Contents/MacOS/Cursor"
+# alias cursor="/Applications/Cursor.app/Contents/MacOS/Cursor"
 
 
 ### Kubectl aliases

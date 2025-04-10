@@ -10,10 +10,11 @@ export PATH=$PATH:$PULUMI_PATH:$MONO_PATH:$GOPATH:$LOCAL_BIN:$LATEX_BIN
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git z fd zsh-autosuggestions alias-finder git-extras gcloud aws )
+plugins=(git z zsh-autosuggestions alias-finder git-extras gcloud aws kube-ps1 )
 
 source $ZSH/oh-my-zsh.sh 
 
+alias vim="lvim"
 # Settings
 export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=999999999
@@ -26,17 +27,11 @@ else
 	echo >&2 "WARNING: can't load shell functions"
 fi
 
-# Load custom aliases
+# Load custom aliaseks
 if [[ -f "$HOME/.zsh_aliases.zsh" ]]; then
 	source "$HOME/.zsh_aliases.zsh"
 else
 	echo >&2 "WARNING: can't load shell aliases"
-fi
-
-if [[ -f "$HOME/.zsh_secrets.zsh" ]]; then
-        source "$HOME/.zsh_secrets.zsh"
-else
-        echo >&2 "WARNING: can't load secret variables"
 fi
 
 # Load custom plugins 
@@ -69,27 +64,17 @@ export FZF_DEFAULT_OPTS="
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
-export KUBE_EDTIOR="$HOME/.local/bin/nvim"
-export EDITOR="$HOME/.local/bin/nvim"
+export KUBE_EDTIOR="$HOME/.local/bin/lvim"
+export EDITOR="$HOME/.local/bin/lvim"
 
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
 export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
  
 
-# 
-export GOROOT=$HOME/.go
-export PATH=$GOROOT/bin:$PATH
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
-# GoLang
-export GOROOT=$HOME/.go
-export PATH=$GOROOT/bin:$PATH
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
 # GoLang
 export GOROOT=$HOME/.go
 export PATH=$GOROOT/bin:$PATH
@@ -101,7 +86,40 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/yagu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yagu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/yagu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yagu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
+
+# GoLang
+export GOROOT=$HOME/.go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.cache/lm-studio/bin"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
+# END opam configuration
+#
+alias coreutils="$HOME/personal/coreutils/target/release/coreutils"
+alias dcoreutils="$HOME/personal/coreutils/target/debug/coreutils"
+
+alias zcommit="$HOME/personal/zcommit/zcommit.sh"
+alias zc="zcommit"
+eval "$(atuin init zsh)"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

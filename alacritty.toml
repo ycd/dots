@@ -1,0 +1,81 @@
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = 21
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = 24
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "W"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SearchForward"
+key = "M"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SearchBackward"
+key = "B"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SearchBackward"
+key = "Back"
+mods = "Control|Alt"
+
+[general]
+import = ["/Users/yagizdegirmenci/.config/alacritty/themes/themes/iterm.yaml"]
+
+[terminal]
+
+[env]
+TERM = "xterm-256color"
+
+[font.bold]
+family = "Martian Mono"
+
+[font.bold_italic]
+family = "Fira Mono"
+
+[font.italic]
+family = "Fira Mono"
+
+[font.normal]
+family = "Martian Mono"
+
+[terminal.shell]
+args = ["new-session", "-A", "-D", "-s", "main"]
+program = "/opt/homebrew/bin/tmux"
+
+[window]
+opacity = 1
+
+[colors]
+draw_bold_text_with_bright_colors = true

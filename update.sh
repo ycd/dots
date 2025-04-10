@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp ~/.config/alacritty/alacritty.yml alacritty.yml
+cp ~/.config/alacritty/alacritty.toml alacritty.toml
 cp ~/.config/nvim/init.vim init.vim
 cp ~/.config/nvim/lua/init.lua init.lua
 cp ~/.tmux.conf .tmux.conf
@@ -20,4 +20,3 @@ else
 	mv .old_brewfile Brewfile
 	echo "Failed to update Brewfile"
 fi
-
